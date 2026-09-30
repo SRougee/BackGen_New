@@ -1,0 +1,18 @@
+# BackGen
+
+> BackGen is a digital services company offering websites, web, mobile and desktop applications and custom software for businesses across the East Rand and Gauteng, South Africa.
+
+Services include website design and development, custom business software, web, mobile and desktop applications, website maintenance, Google Business Profile setup and SEO. Software projects are scoped to the client’s requirements; contact BackGen for a quote.
+
+Contact: info@backgen.co.za or +27 78 300 4622. Office hours: Monday to Friday, 08:00–17:00, South Africa time.
+
+## Business information
+
+- [Home](https://backgen.co.za/): Business overview and services.
+- [Services](https://backgen.co.za/services.html): Website design, software creation, web, mobile and desktop applications, maintenance, Google Business Profile and SEO.
+- [Work](https://backgen.co.za/work.html): Website projects for AJ Accounting & Tax and CRS Gas.
+- [Contact](https://backgen.co.za/contact.html): Enquiries, service area and quote requests.
+
+## Optional
+
+- [Sitemap](https://backgen.co.za/sitemap.xml): Canonical public pages.

@@ -57,13 +57,43 @@ document.addEventListener('DOMContentLoaded', function () {
   const lightboxMobile = document.getElementById('lightboxMobile');
   const lightboxCloseBtn = document.getElementById('lightboxClose');
 
-  function openLightbox(title, url, desktopLabel, mobileLabel) {
+  function setPreview(container, src, alt) {
+    if (!container) return;
+    container.innerHTML = '';
+
+    if (!src) {
+      container.textContent = 'Preview unavailable';
+      return;
+    }
+
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = alt || 'Website preview';
+    img.loading = 'eager';
+    img.addEventListener('error', function () {
+      container.innerHTML = '<span>Preview unavailable</span>';
+    });
+    container.appendChild(img);
+  }
+
+  function openLightbox(title, url, desktopImage, mobileImage) {
     if (!lightbox) return;
+
     lightboxTitle.textContent = title;
-    lightboxUrl.textContent = url;
+    lightboxUrl.textContent = url.replace(/^https?:\/\//, '');
     lightboxUrl.href = url.startsWith('http') ? url : 'https://' + url;
-    lightboxDesktop.textContent = desktopLabel || 'Desktop view screenshot';
-    lightboxMobile.textContent = mobileLabel || 'Mobile view screenshot';
+
+    setPreview(
+      lightboxDesktop,
+      desktopImage,
+      title + ' desktop website preview'
+    );
+    setPreview(
+      lightboxMobile,
+      mobileImage,
+      title + ' mobile website preview'
+    );
+
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -79,8 +109,8 @@ document.addEventListener('DOMContentLoaded', function () {
       openLightbox(
         el.dataset.title || 'Project',
         el.dataset.url || '#',
-        el.dataset.desktop || 'Desktop screenshot',
-        el.dataset.mobile || 'Mobile screenshot'
+        el.dataset.desktopImage || '',
+        el.dataset.mobileImage || ''
       );
     });
   });

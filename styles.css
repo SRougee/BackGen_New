@@ -945,3 +945,14 @@ p { color: var(--text-dim); font-size: 1.02rem; }
   .mockup-desktop { width: 90%; }
   .mockup-mobile { width: 40%; }
 }
+
+/* Software services use the existing charcoal and blue palette. */
+.service-card .software-visual {
+  background: linear-gradient(135deg, var(--bg-card), var(--accent-dim));
+  flex-direction: column;
+  gap: 8px;
+  color: var(--accent-soft);
+}
+.software-visual span:first-child { font: 600 2.6rem var(--font-body); }
+.software-visual span:last-child { color: var(--text-dim); }
+.service-card[id] { scroll-margin-top: 110px; }
