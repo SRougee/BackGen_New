@@ -956,3 +956,6 @@ p { color: var(--text-dim); font-size: 1.02rem; }
 .software-visual span:first-child { font: 600 2.6rem var(--font-body); }
 .software-visual span:last-child { color: var(--text-dim); }
 .service-card[id] { scroll-margin-top: 110px; }
+
+/* Shared brand mark in navigation, mobile menu and footer. */
+.logo .brand-mark { width: 48px; height: 48px; flex-shrink: 0; border-radius: 10px; object-fit: contain; }

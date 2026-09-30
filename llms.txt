@@ -16,3 +16,4 @@ Contact: info@backgen.co.za or +27 78 300 4622. Office hours: Monday to Friday, 
 ## Optional
 
 - [Sitemap](https://backgen.co.za/sitemap.xml): Canonical public pages.
+- [Official BackGen logo](https://backgen.co.za/assets/backgen-logo.png): Blue BG monogram on charcoal.
